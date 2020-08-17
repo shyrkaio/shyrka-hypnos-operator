@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 //@TODO rewrite this path to regular path (according to kubernetes practice)
-@Path("/erebus/v1alpha1/hypnos")
+@Path("/erebus/v1alpha3/hypnos")
 public class HypnosStatus {
 
     @Inject

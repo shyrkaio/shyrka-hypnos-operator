@@ -9,7 +9,7 @@ metadata:
   annotations:
     io.shyrkaio.github.erebus/hypnos: "{}"
 spec:
-  namespaceTargetedLabel: "io.shyrka.erebus/hypnos=sample010"
+  namespaceTargetedLabel: "io.shyrka.erebus/hypnos=sample012"
   targetedLabel: "io.shyrka.erebus/hypnos=sample"
   resourceType:
     - "Deployment"

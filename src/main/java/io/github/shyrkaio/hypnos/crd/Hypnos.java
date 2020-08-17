@@ -41,7 +41,7 @@ public class Hypnos extends CustomResource {
     }
     @Override
     public String getApiVersion() {
-        return "shyrkaio.github.io/v1alpha1";
+        return "shyrkaio.github.io/v1alpha3";
     }
 
     @Override

@@ -20,10 +20,10 @@ metadata:
     #io.shyrka.erebus.hypnos/skipCron: "true"
   generation: 1
   labels:
-    io.shyrka.erebus/hypnos: "sample"
+    io.shyrka.erebus/hypnos: "not-sample"
     io.shyrka.erebus/role: "test"
-    app: hypnos-012-2
-  name: hypnos-012-2
+    app: hypnos-012-1
+  name: hypnos-012-1
   namespace: hypnos-smp-012
 spec:
   progressDeadlineSeconds: 100
@@ -31,7 +31,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: hypnos-012-2
+      app: hypnos-012-1
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -41,7 +41,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: hypnos-012-2
+        app: hypnos-012-1
     spec:
       containers:
         - image: quay.io/kanedafromparis/nginx:ocp-0.3

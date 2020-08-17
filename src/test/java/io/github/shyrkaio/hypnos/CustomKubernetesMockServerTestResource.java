@@ -35,7 +35,7 @@ public class CustomKubernetesMockServerTestResource extends KubernetesMockServer
     @Override
     public void configureMockServer(KubernetesMockServer mockServer) {
 
-        mockServer.expect().get().withPath("/apis/shyrkaio.github.io/v1alpha1/hypnox?watch=true")
+        mockServer.expect().get().withPath("/apis/shyrkaio.github.io/v1alpha3/hypnox?watch=true")
                 .andReturn(200, this.getHypnos001())
                 .always();
 

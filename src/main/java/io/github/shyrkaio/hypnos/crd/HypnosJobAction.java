@@ -27,7 +27,7 @@ public class HypnosJobAction {
     private KubernetesClient client;
 
     CustomResourceDefinitionContext crdDefinitionContext = new CustomResourceDefinitionContext.Builder()
-            .withVersion("v1alpha1")
+            .withVersion("v1alpha3")
             .withScope("Cluster")
             .withGroup("shyrkaio.github.io")
             .withPlural("hypnox")
@@ -99,10 +99,8 @@ public class HypnosJobAction {
     }
 
     private Hypnos getHypnos(String hypnosName) {
-        KubernetesDeserializer.registerCustomKind("io.github.shyrkaio.operator/v1alpha1", "Hypnos",
+        KubernetesDeserializer.registerCustomKind("io.github.shyrkaio.operator/v1alpha3", "Hypnos",
                 Hypnos.class);
-
-
 
         Hypnos hypnos = getClient().customResources(Hypnos.class,
                 HypnosList.class
